@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Encode Sans", sans-serif;
+  src: url(../fonts/EncodeSans-VariableFont_wdth-wght.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(../fonts/Poppins-Bold.ttf);
+  src: url(../fonts/Poppins-ExtraBold.ttf);
+  src: url(../fonts/Poppins-ExtraLight.ttf);
+  src: url(../fonts/Poppins-Italic.ttf);
+  src: url(../fonts/Poppins-Light.ttf);
+  src: url(../fonts/Poppins-LightItalic.ttf);
+  src: url(../fonts/Poppins-Medium.ttf);
+  src: url(../fonts/Poppins-MediumItalic.ttf);
+  src: url(../fonts/Poppins-Regular.ttf);
+  src: url(../fonts/Poppins-SemiBold.ttf);
+  src: url(../fonts/Poppins-SemiBoldItalic.ttf);
+  src: url(../fonts/Poppins-Thin.ttf);
+  font-size: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+}
+body {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-family: "Encode Sans";
+  color: red;
+}
