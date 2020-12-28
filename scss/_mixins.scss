@@ -1,0 +1,59 @@
+@mixin button($background-color, $border, $border-radius, $color) {
+  align-items: center;
+  background-color: $color-principal;
+  border: $border;
+  border-radius: $border-radius;
+  box-shadow: 1px 2px 8px 0px $gray-light;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: $color;
+  display: inline-block;
+  display: inline-flex;
+  height: 48px;
+  justify-content: space-between;
+  min-width: 240px;
+  padding: 14px 12px 14px 16px;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  &:hover {
+    background-color: $color-on-principal;
+    box-shadow: 2px 4px 8px 1px $gray-light;
+  }
+  @include button-text($font-weight-button, $font-size-button);
+}
+@mixin button-text($font-weight, $font-size) {
+  font-weight: $font-weight-button;
+  font-size: $font-size-button;
+  font-family: "Poppins";
+  line-height: 1.5;
+  letter-spacing: 1.25px;
+  text-align: left;
+  margin: 0 0 0 16px;
+  text-transform: uppercase;
+}
+@mixin button-icon($color, $fontsize) {
+  color: $white;
+  font-size: $font-size-button;
+  font-weight: 600;
+  padding: 0 8px;
+}
+@mixin button-hover($background-color, $color) {
+  background-color: $color-on-principal;
+  color: $white;
+  box-shadow: 2px 4px 8px 1px $gray-light;
+  text-decoration: none;
+}
+/*
+width: 182px;
+  height: 20px;
+  margin: 0.1px 0 0 17.8px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 1.25px;
+  text-align: left;
+  color: #ffffff;
+*/
