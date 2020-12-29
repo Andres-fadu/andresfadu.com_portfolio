@@ -23,9 +23,20 @@ body {
   font-family: "Poppins";
   margin: 0;
   padding: 0;
+  background-color: $color-light;
 }
-
-h1 {
-  font-family: "Encode Sans";
-  color: $color-principal;
+/*Titles*/
+.title {
+}
+/*Paragraph*/
+p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0.48px;
+  text-align: center;
+}
+/*Wrapper*/
+.wrapper {
+  padding: 0 1.75em;
 }

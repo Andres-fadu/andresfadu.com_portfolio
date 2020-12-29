@@ -1,3 +1,21 @@
 .hero {
-  border: 2px solid red;
+  text-align: center;
+}
+.title__h1--header {
+  font-family: "Encode Sans";
+  color: $color-principal;
+  font-size: 1.3125em;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: 0.63px;
+  margin-bottom: 1.25em;
+}
+.title__h2 {
+  font-size: 1.625rem;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.78px;
+  text-align: center;
+  color: $gray-dark;
+  text-transform: uppercase;
 }
