@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 8px;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  box-shadow: 15px 15px 50px 0 #0000000d;
+  border: solid 1px #f8f8f84d;
+  background-image: linear-gradient(99deg, #ffffff57 -2%, #f7f7f726 103%);
+  z-index: 9;
+  position: sticky;
+  left: 0;
+  top: 0;
+  .title__h1--header {
+    font-family: "Encode Sans";
+    color: $color-principal;
+    font-size: 1.3125em;
+    font-weight: 600;
+    line-height: 1.29;
+    letter-spacing: 0.63px;
+    margin: 0;
+  }
+  &__logo {
+    padding: 10px 12px;
+  }
+}

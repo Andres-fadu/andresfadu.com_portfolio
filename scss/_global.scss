@@ -27,6 +27,33 @@ body {
 }
 /*Titles*/
 .title {
+  color: $gray-dark;
+  font-stretch: normal;
+  font-style: normal;
+  &__h2 {
+    font-size: 1.875rem;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.78px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 32px 0;
+  }
+  &__h4 {
+    font-size: 1rem;
+    font-weight: 500;
+
+    line-height: 1.56;
+    letter-spacing: 0.48px;
+    text-align: left;
+  }
+  &__h5 {
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.42px;
+    text-align: left;
+  }
 }
 /*Paragraph*/
 p {
@@ -38,5 +65,5 @@ p {
 }
 /*Wrapper*/
 .wrapper {
-  padding: 0 1.75em;
+  padding: 0 $wrapper-space;
 }
