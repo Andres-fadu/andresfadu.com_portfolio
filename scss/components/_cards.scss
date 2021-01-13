@@ -1,6 +1,7 @@
 .card {
-  @include bg-card(320px, 172px, 52px auto, 16px);
+  @include bg-card(320px, 172px, 52px 20px 20px, 16px);
   z-index: 5;
+  min-width: 320px;
   &__avatar {
     position: absolute;
     left: 20px;

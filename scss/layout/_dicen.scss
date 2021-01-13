@@ -8,4 +8,87 @@
   .title__h2 {
     margin: 120px 0;
   }
+  .slider {
+    width: 360px;
+    margin: auto;
+    padding: 0px;
+    overflow: hidden;
+    &__card {
+      margin: auto;
+      display: flex;
+      width: 1080px;
+      padding: 0;
+      animation: cambio 10s infinite alternate;
+      animation-timing-function: ease-in-out;
+    }
+  }
+}
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  30% {
+    margin-left: 0;
+  }
+  35% {
+    margin-left: -360px;
+  }
+  65% {
+    margin-left: -360px;
+  }
+  70% {
+    margin-left: -720px;
+  }
+  100% {
+    margin-left: -720px;
+  }
+}
+@media only screen and (min-width: $screen_medium) {
+  #dicen {
+    .slider {
+      width: 720px;
+    }
+  }
+  @keyframes cambio {
+    0% {
+      margin-left: 0;
+    }
+    20% {
+      margin-left: 0;
+    }
+    25% {
+      margin-left: -360px;
+    }
+    45% {
+      margin-left: -360px;
+    }
+    50% {
+      margin-left: 0px;
+    }
+    70% {
+      margin-left: 0px;
+    }
+    75% {
+      margin-left: -360px;
+    }
+    100% {
+      margin-left: -360px;
+    }
+  }
+}
+@media only screen and (min-width: $screen_xlarge) {
+  #dicen {
+    .slider {
+      width: 1080px;
+      margin: 0 auto;
+    }
+  }
+  @keyframes cambio {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }
 }
