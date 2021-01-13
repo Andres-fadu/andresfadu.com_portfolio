@@ -1,0 +1,14 @@
+.rrss {
+  border: 2px solid red;
+  position: sticky;
+  display: inline-block;
+  left: 10px;
+  top: 250px;
+  z-index: 6;
+  &__bt {
+    @include bg-card(32px, 32px, 0 0 13px, 24px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
