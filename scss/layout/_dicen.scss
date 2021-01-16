@@ -1,9 +1,8 @@
 #dicen {
-  top: 717px;
-  width: 100vw;
-  height: 1080px;
-  background: transparent url("../img/bg_dicen.png") 0% 0% no-repeat padding-box;
-  border-radius: 120px;
+  width: 100%;
+  height: 100%;
+  background: cover;
+  background-image: url("../../img/background1.jpg");
   margin-top: -300px;
   .title__h2 {
     margin: 120px 0;
