@@ -1,15 +1,53 @@
 .hero {
   text-align: center;
   padding-bottom: 2em;
+  &__wrapper {
+    min-width: 288px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2.5fr 3fr 1fr;
+  }
   &__img {
     height: 320px;
-    background-image: url(../img/me.png);
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: 320px;
-    margin-top: -32px;
+    margin-top: -50px;
   }
-  button {
-    margin-top: -114px;
+  &__copy {
+    z-index: 2;
+  }
+  a {
+    margin-top: -40px;
+    width: 240px;
+    justify-self: center;
+    z-index: 9;
+  }
+}
+@media only screen and (min-width: $screen_medium) {
+  .hero {
+    &__wrapper {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+      padding-top: 100px;
+    }
+    &__img {
+      grid-column: 2/3;
+      grid-row: 1/4;
+      margin-top: 50px;
+    }
+    .title__h2 {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      text-align: left;
+    }
+    &__copy {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      text-align: left;
+    }
+    a {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      justify-self: left;
+    }
   }
 }
