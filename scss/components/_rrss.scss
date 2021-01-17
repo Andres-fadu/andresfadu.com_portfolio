@@ -2,7 +2,8 @@
   position: sticky;
   display: inline-block;
   left: 5%;
-  top: 40%;
+  top: 50%;
+  padding-top: 40px;
   z-index: 6;
   &__bt {
     @include bg-card(32px, 32px, 0 0 13px, 24px);
