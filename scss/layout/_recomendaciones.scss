@@ -3,14 +3,14 @@
   height: 100%;
   background: cover;
   background-image: url("../img/background1.jpg");
-  margin-top: -300px;
+  margin-top: -400px;
   .title__h2 {
     margin: 120px 0;
   }
   .slider {
     width: 360px;
     margin: auto;
-    padding: 200px 0;
+    padding: 200px 0 100px 0;
     overflow: hidden;
     &__card {
       margin: auto;

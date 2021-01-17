@@ -14,12 +14,13 @@
     width: 90px;
     grid-column: 1/2;
   }
-  .title__h4 {
-    margin: 16px 16px 4px 0px;
+  .title__h5 {
+    font-size: $font-size-h4;
+    margin: 16px 16px 0px 0px;
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  .title__h5 {
+  .title__h6 {
     margin: 0 16px 4px 0px;
     grid-column: 2/3;
     grid-row: 2/3;

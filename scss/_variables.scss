@@ -20,17 +20,24 @@ $alternative-font: "Merriweather", serif;
 
 /* Font sizes */
 $font-size-base: 16px !default;
-$font-size-h1: 3rem;
-$font-size-h2: 2.8rem;
+$font-size-h1: 3.2rem;
+$font-size-h2: 3rem;
 $font-size-h3: 1.75rem;
+$font-size-h4: 1.125;
+$font-size-h5: 1rem;
+$font-size-h6: 0.875;
+$font-size-par2: $font-size-h5;
 $font-size-button: 0.875rem;
 
 /* Font weight*/
 $font-weight-h1: 600;
 $font-weight-h2: 500;
 $font-weight-h3: 500;
+$font-weight-h4: 500;
+$font-weight-h5: 500;
+$font-weight-h6: 400;
 $font-weight-body: 400;
-$font-weight-button: 500;
+$font-weight-button: 600;
 
 /* Colors */
 $color-principal: #ef3340;

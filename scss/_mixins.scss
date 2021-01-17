@@ -1,6 +1,6 @@
 @mixin button($background-color, $border, $border-radius, $color) {
   align-items: center;
-  background-color: $color-principal;
+  background-color: $background-color;
   border: $border;
   border-radius: $border-radius;
   box-shadow: 1px 2px 8px 0px $gray-light;

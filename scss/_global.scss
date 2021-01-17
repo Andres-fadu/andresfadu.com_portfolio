@@ -39,15 +39,15 @@ body {
     text-transform: uppercase;
     margin: 32px 0;
   }
-  &__h4 {
-    font-size: 1rem;
-    font-weight: 500;
+  &__h5 {
+    font-size: $font-size-h5;
+    font-weight: $font-weight-h5;
 
     line-height: 1.56;
     letter-spacing: 0.48px;
     text-align: left;
   }
-  &__h5 {
+  &__h6 {
     font-size: 0.875rem;
     font-weight: normal;
     line-height: 1.5;
