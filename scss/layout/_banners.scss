@@ -11,10 +11,9 @@
   &__h4--banner {
     font-size: 1.25rem;
     font-weight: $font-weight-h4;
-    padding-bottom: 3em;
+    padding-bottom: 2em;
   }
 }
 .button--banner {
-  @include button(none, 3px solid $color-dark, 4px, $color-dark);
-  margin: 2em 0;
+  margin: 1.5em 0;
 }

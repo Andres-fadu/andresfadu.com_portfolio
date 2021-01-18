@@ -21,9 +21,24 @@
   }
   @include button-text($font-weight-button, $font-size-button);
 }
+@mixin button-line($border, $border-radius, $color) {
+  align-items: center;
+  border: $border;
+  border-radius: $border-radius;
+  color: $color;
+  display: inline-block;
+  display: inline-flex;
+  height: 48px;
+  justify-content: space-between;
+  min-width: 240px;
+  padding: 0px 16px;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  @include button-text($font-weight-button, $font-size-button);
+}
 @mixin button-text($font-weight, $font-size) {
-  font-weight: $font-weight-button;
-  font-size: $font-size-button;
+  font-weight: $font-weight;
+  font-size: $font-size;
   font-family: "Poppins";
   line-height: 1.5;
   letter-spacing: 1.25px;
@@ -31,17 +46,22 @@
   margin: 0;
   text-transform: uppercase;
 }
+@mixin button-hover($background-color, $color) {
+  background-color: $background-color;
+  color: $color;
+  box-shadow: 2px 4px 8px 1px $gray-light;
+  text-decoration: none;
+}
+@mixin button-line-hover($border, $color) {
+  border: $border;
+  color: $color;
+  text-decoration: none;
+}
 @mixin button-icon($color, $fontsize) {
   color: $white;
   font-size: $font-size-button;
   font-weight: 600;
   padding: 0 8px;
-}
-@mixin button-hover($background-color, $color) {
-  background-color: $color-on-principal;
-  color: $white;
-  box-shadow: 2px 4px 8px 1px $gray-light;
-  text-decoration: none;
 }
 @mixin bg-card($width, $height, $margin, $border-radius) {
   width: $width;

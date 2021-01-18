@@ -1,2 +1,3 @@
 [0116/165010.329:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
 [0116/172044.057:ERROR:process_info.cc(359)] UncheckedAllocate
+[0118/124730.348:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)

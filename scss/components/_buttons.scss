@@ -1,3 +1,14 @@
 .button {
   @include button($color-principal, none, 24px, $white);
+  &:hover {
+    @include button-hover($color-on-principal, $white);
+  }
+}
+.button-line {
+  @include button-line(3px solid $color-dark, 4px, $color-dark);
+  &:hover {
+    @include button-line-hover(3px solid $gray-light, $color-dark);
+    background-color: white;
+    opacity: 0.5;
+  }
 }
