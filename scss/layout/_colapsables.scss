@@ -1,0 +1,42 @@
+#metodos {
+  background-color: $color-principal;
+  padding: 1em 0;
+  margin-top: 6em;
+  .title__h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 0;
+  }
+  .colapsable {
+    @include colapsables($color-principal, $color-dark, none, $font-size-h3);
+    border-top: 3px solid $color-dark;
+    text-transform: uppercase;
+    &:hover {
+      background-color: $color-on-principal;
+    }
+    &:after {
+      content: "\02795";
+      font-size: 13px;
+      color: $color-dark;
+      float: right;
+      margin-left: 5px;
+    }
+  }
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: $color-principal;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+    p {
+      text-align: left;
+    }
+  }
+  .active {
+    background-color: $color-on-principal;
+    &:after {
+      content: "\2796";
+    }
+  }
+}
