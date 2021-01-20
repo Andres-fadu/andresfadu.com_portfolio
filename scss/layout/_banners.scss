@@ -1,20 +1,68 @@
+.container__banner {
+  padding: 10em 0;
+}
 .title {
   &__h2--banner {
     font-size: $font-size-h2;
     font-weight: $font-weight-h2;
     min-width: 256px;
+    word-wrap: break-word;
+    text-transform: uppercase;
   }
   &__h3--banner {
     font-size: $font-size-h3;
     font-weight: $font-weight-h3;
     padding-bottom: 1em;
+    word-wrap: break-word;
   }
   &__h4--banner {
     font-size: 1.25rem;
     font-weight: $font-weight-h4;
     padding-bottom: 2em;
+    word-wrap: break-word;
   }
 }
 .button--banner {
   margin: 1.5em 0;
+}
+
+@media only screen and (min-width: $screen_medium) {
+  .container__banner {
+    &--h2 {
+      padding-right: 20%;
+    }
+    &--h3 {
+      padding-left: 20%;
+    }
+    &--h4 {
+      padding-left: 20%;
+    }
+  }
+}
+
+@media only screen and (min-width: $screen_large) {
+  .container__banner {
+    &--h2 {
+      padding-right: 30%;
+    }
+    &--h3 {
+      padding-left: 30%;
+    }
+    &--h4 {
+      padding-left: 30%;
+    }
+  }
+}
+@media only screen and (min-width: $screen_xlarge) {
+  .container__banner {
+    &--h2 {
+      padding-right: 30%;
+    }
+    &--h3 {
+      padding-left: 40%;
+    }
+    &--h4 {
+      padding-left: 40%;
+    }
+  }
 }

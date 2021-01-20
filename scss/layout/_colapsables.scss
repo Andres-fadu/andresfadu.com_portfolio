@@ -1,13 +1,15 @@
 #metodos {
   background-color: $color-principal;
   padding: 1em 0;
-  margin-top: 6em;
   .title__h2 {
     text-align: center;
     text-transform: uppercase;
     padding: 1em 0;
   }
-  .colapsable__button {
+}
+.colapsable {
+  padding-bottom: 4em;
+  &__button {
     @include colapsables($color-principal, $color-dark, none, $font-size-h3);
     border-top: 3px solid $color-dark;
     text-transform: uppercase;
@@ -15,7 +17,6 @@
       background-color: $color-on-principal;
     }
     &::after {
-      content: "\025be";
       font-size: 2rem;
       color: $color-dark;
       float: right;
@@ -23,12 +24,9 @@
     }
     &--active {
       background: $color-principal;
-      &::after {
-        content: "\25b4";
-      }
     }
   }
-  .colapsable__content {
+  &__text {
     padding: 0 18px;
     display: none;
     overflow: hidden;
