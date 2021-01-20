@@ -2,6 +2,7 @@
   &__h2--banner {
     font-size: $font-size-h2;
     font-weight: $font-weight-h2;
+    min-width: 256px;
   }
   &__h3--banner {
     font-size: $font-size-h3;

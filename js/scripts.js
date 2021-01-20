@@ -1,9 +1,11 @@
-var coll = document.getElementsByClassName("colapsable");
+//colapsable
+
+var coll = document.getElementsByClassName("colapsable__button");
 var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function () {
-    this.classList.toggle("active");
+    this.classList.toggle("colapsable__button--active");
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
@@ -12,13 +14,11 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
-var coll = document.getElementsByClassName("colapsable");
-var i;
+//colapsable animacion
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function () {
-    this.classList.toggle("active");
+    this.classList.toggle("colapsable__button--active");
     var content = this.nextElementSibling;
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
@@ -27,3 +27,10 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+//hamburger
+
+var hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("is-active");
+});

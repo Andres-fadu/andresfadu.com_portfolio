@@ -7,22 +7,28 @@
     text-transform: uppercase;
     padding: 1em 0;
   }
-  .colapsable {
+  .colapsable__button {
     @include colapsables($color-principal, $color-dark, none, $font-size-h3);
     border-top: 3px solid $color-dark;
     text-transform: uppercase;
     &:hover {
       background-color: $color-on-principal;
     }
-    &:after {
-      content: "\02795";
-      font-size: 13px;
+    &::after {
+      content: "\025be";
+      font-size: 2rem;
       color: $color-dark;
       float: right;
       margin-left: 5px;
     }
+    &--active {
+      background: $color-principal;
+      &::after {
+        content: "\25b4";
+      }
+    }
   }
-  .content {
+  .colapsable__content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
@@ -31,12 +37,6 @@
     transition: max-height 0.4s ease-out;
     p {
       text-align: left;
-    }
-  }
-  .active {
-    background-color: $color-on-principal;
-    &:after {
-      content: "\2796";
     }
   }
 }

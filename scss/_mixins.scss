@@ -75,6 +75,7 @@
   background-image: linear-gradient(117deg, #ffffff29 -2%, #ffffff0d 103%);
 }
 @mixin colapsables($background-color, $color, $border, $font-size) {
+  display: block;
   background-color: $background-color;
   color: $color;
   cursor: pointer;
@@ -84,4 +85,5 @@
   text-align: left;
   outline: none;
   font-size: $font-size;
+  transition: background 0.4s;
 }
