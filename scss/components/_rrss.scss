@@ -11,4 +11,10 @@
     align-items: center;
     justify-content: center;
   }
+  @media only screen and (min-width: #{$screen_xlarge}) {
+    left: 8%;
+  }
+  @media only screen and (min-width: #{$screen_xxlarge}) {
+    left: 20%;
+  }
 }

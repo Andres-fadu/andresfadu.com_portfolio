@@ -68,6 +68,7 @@
   height: $height;
   margin: $margin;
   border-radius: $border-radius;
+  -moz-backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   box-shadow: 4px 4px 12px 0 #0000000d;

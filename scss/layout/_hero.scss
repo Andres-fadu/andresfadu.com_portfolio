@@ -3,8 +3,9 @@
   padding-bottom: 2em;
   &__wrapper {
     padding-top: 5%;
+    margin-top: 56px;
     margin-bottom: 10%;
-    min-width: 288px;
+    min-width: 256px;
     .title__h2 {
       word-wrap: break-word;
       font-size: 2.3rem;
@@ -12,6 +13,7 @@
   }
   &__img {
     width: 100%;
+    min-width: 256;
     min-height: 340px;
     background-image: url(../img/me.png);
     background-size: contain;

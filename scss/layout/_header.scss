@@ -1,8 +1,5 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 56px;
+  min-height: 3em;
   padding: 0 $wrapper-space;
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
@@ -10,9 +7,16 @@
   border: solid 1px #f8f8f84d;
   background-image: linear-gradient(99deg, #ffffff57 -2%, #f7f7f726 103%);
   z-index: 9;
-  position: sticky;
+  position: fixed;
   left: 0;
+  right: 0;
   top: 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   .title__h1--header {
     font-family: "Encode Sans";
     color: $color-principal;
@@ -21,11 +25,68 @@
     line-height: 1.29;
     letter-spacing: 0.63px;
     margin: 0;
+    width: 7em;
+    padding: 0.4em;
   }
   &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__logotipo {
     padding: 10px 10px 12px 0;
   }
   &__menu {
     margin-right: -12px;
+    width: 100%;
+  }
+  ul {
+    margin: 0;
+    padding: 2em 0;
+    list-style: none;
+    display: none;
+    &.show {
+      display: block;
+    }
+    li {
+      display: block;
+      padding: 0.5em;
+
+      a {
+        display: block;
+        color: $color-principal;
+        @include button-text($font-weight-button, $font-size-button);
+        text-align: center;
+        padding: 1em 0.7em;
+        transition: all 0.4s linear;
+        &:hover {
+          color: $color-on-principal;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: $screen_large) {
+  .header {
+    height: 6em;
+    z-index: 10;
+    &__wrapper {
+      flex-wrap: nowrap;
+      display: flex;
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+        li {
+          display: inline-block;
+          padding: 0 1em;
+          a {
+            @include button-text($font-weight-button, 0.8rem);
+          }
+        }
+      }
+      .hamburger {
+        display: none;
+      }
+    }
   }
 }

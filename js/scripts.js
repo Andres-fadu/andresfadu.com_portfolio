@@ -34,3 +34,15 @@ var hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("is-active");
 });
+
+jQuery("document").ready(function ($) {
+  var menuBtn = $(".hamburger"),
+    menu = $(".header__menu ul");
+  menuBtn.click(function () {
+    if (menu.hasClass("show")) {
+      menu.removeClass("show");
+    } else {
+      menu.addClass("show");
+    }
+  });
+});
