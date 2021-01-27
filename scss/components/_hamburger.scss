@@ -20,7 +20,11 @@ $hamburger-types: (arrowturn-r) !default;
   display: inline-block;
   cursor: pointer;
 
+  transition-property: opacity, -webkit-filter;
+
   transition-property: opacity, filter;
+
+  transition-property: opacity, filter, -webkit-filter;
   transition-duration: 0.15s;
   transition-timing-function: linear;
 
@@ -35,6 +39,7 @@ $hamburger-types: (arrowturn-r) !default;
 
   &:hover {
     @if $hamburger-hover-use-filter == true {
+      -webkit-filter: $hamburger-hover-filter;
       filter: $hamburger-hover-filter;
     } @else {
       opacity: $hamburger-hover-opacity;
@@ -44,6 +49,7 @@ $hamburger-types: (arrowturn-r) !default;
   &.is-active {
     &:hover {
       @if $hamburger-hover-use-filter == true {
+        -webkit-filter: $hamburger-active-hover-filter;
         filter: $hamburger-active-hover-filter;
       } @else {
         opacity: $hamburger-active-hover-opacity;

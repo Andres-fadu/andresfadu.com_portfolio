@@ -117,9 +117,6 @@
     width: 0;
     height: 2px;
     background-color: transparent;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
     transition: all 0.4s;
   }
   .focus-input2::after {
@@ -133,10 +130,6 @@
     font-size: 13px;
     color: $gray-dark;
     line-height: 1.2;
-
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
     transition: all 0.4s;
   }
   input.input2 {
@@ -177,10 +170,6 @@
     width: 100%;
   }
   .container-contact2-form-btn {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -205,17 +194,9 @@
     background: $color-principal;
     top: 0;
     left: -100%;
-
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
     transition: all 0.4s;
   }
   .contact2-form-btn {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,10 +229,6 @@
     border-radius: 2px;
     padding: 4px 25px 4px 10px;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     transform: translateY(-50%);
     right: 0px;
     pointer-events: none;
@@ -263,10 +240,6 @@
 
     visibility: hidden;
     opacity: 0;
-
-    -webkit-transition: opacity 0.4s;
-    -o-transition: opacity 0.4s;
-    -moz-transition: opacity 0.4s;
     transition: opacity 0.4s;
   }
 
@@ -277,10 +250,6 @@
     color: #c80000;
     font-size: 16px;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     transform: translateY(-50%);
     right: 8px;
   }
