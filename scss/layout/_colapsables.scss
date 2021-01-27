@@ -38,3 +38,84 @@
     }
   }
 }
+#portafolio {
+  padding: 1em 0;
+  .title__h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 0;
+  }
+  .colapsable {
+    padding-bottom: 4em;
+    &__button {
+      @include colapsables($color-light, $color-dark, none, $font-size-h3);
+      border-top: 3px solid $color-dark;
+      text-transform: uppercase;
+      &:hover {
+        background-color: $white;
+      }
+      &::after {
+        font-size: 2rem;
+        color: $color-dark;
+        float: right;
+        margin-left: 5px;
+      }
+      &--active {
+        background: $color-light;
+      }
+    }
+    &__text {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: $color-light;
+      max-height: 0;
+      transition: max-height 0.4s ease-out;
+      p {
+        text-align: left;
+      }
+    }
+  }
+}
+#faq {
+  background-color: $color-dark;
+  padding: 1em 0;
+  .title__h2 {
+    color: $color-light;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 0;
+  }
+  .colapsable {
+    padding-bottom: 4em;
+    &__button {
+      @include colapsables($color-dark, $color-light, none, $font-size-h3);
+      border-top: 3px solid $color-light;
+      text-transform: uppercase;
+      &:hover {
+        background-color: $color-dark;
+      }
+      &::after {
+        font-size: 2rem;
+        color: $color-light;
+        float: right;
+        margin-left: 5px;
+      }
+      &--active {
+        background: $color-dark;
+      }
+    }
+    &__text {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      color: $color-light;
+      background-color: $color-dark;
+      max-height: 0;
+      transition: max-height 0.4s ease-out;
+      p {
+        text-align: left;
+      }
+    }
+  }
+}

@@ -83,3 +83,19 @@ a {
   text-decoration: none;
   color: $white;
 }
+#contacto {
+  width: 100%;
+  height: 100%;
+  background: cover;
+  background-image: url("../img/imagen-bg-contacto.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .contacto {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+#agenda {
+  padding: 4em 0;
+}

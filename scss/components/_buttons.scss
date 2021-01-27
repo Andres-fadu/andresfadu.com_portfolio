@@ -11,3 +11,10 @@
     background-color: rgba(255, 255, 255, 0.1);
   }
 }
+.button-line--footer {
+  @include button-line(3px solid $color-light, 4px, $color-light);
+  &:hover {
+    @include button-line-hover(3px solid $color-light, $color-light);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
