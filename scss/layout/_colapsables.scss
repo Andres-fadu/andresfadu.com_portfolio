@@ -71,6 +71,10 @@
       background-color: $color-light;
       max-height: 0;
       transition: max-height 0.4s ease-out;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
       p {
         text-align: left;
       }
