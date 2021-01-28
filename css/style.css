@@ -4,7 +4,7 @@
   font-weight: 600;
 }
 @font-face {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   src: url(../fonts/Poppins-Bold.ttf);
   src: url(../fonts/Poppins-ExtraBold.ttf);
   src: url(../fonts/Poppins-ExtraLight.ttf);
@@ -20,7 +20,7 @@
   font-size: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 }
 body {
-  font-family: "Poppins";
+  font-family: Poppins;
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
@@ -58,14 +58,14 @@ body {
 }
 .title__h6 {
   font-size: 0.875rem;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.42px;
   text-align: left;
 }
 p {
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.48px;
   text-align: center;
@@ -83,7 +83,7 @@ a {
   width: 100%;
   height: 100%;
   background: cover;
-  background-image: url("../img/imagen-bg-contacto.jpg");
+  background-image: url(../img/imagen-bg-contacto.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -174,7 +174,7 @@ a {
   width: 100%;
   border: none;
   text-align: left;
-  outline: none;
+  outline: 0;
   font-size: 1.75rem;
   transition: background 0.4s;
   border-top: 3px solid #212121;
@@ -223,7 +223,7 @@ a {
   width: 100%;
   border: none;
   text-align: left;
-  outline: none;
+  outline: 0;
   font-size: 1.75rem;
   transition: background 0.4s;
   border-top: 3px solid #212121;
@@ -278,7 +278,7 @@ a {
   width: 100%;
   border: none;
   text-align: left;
-  outline: none;
+  outline: 0;
   font-size: 1.75rem;
   transition: background 0.4s;
   border-top: 3px solid #f8f8f8;
@@ -347,15 +347,15 @@ a {
   padding: 40px;
 }
 #contacto input {
-  outline: none;
+  outline: 0;
   border: none;
 }
 #contacto textarea {
-  outline: none;
+  outline: 0;
   border: none;
 }
-#contacto textarea:focus,
-#contacto input:focus {
+#contacto input:focus,
+#contacto textarea:focus {
   border-color: transparent !important;
 }
 #contacto textarea:focus::-webkit-input-placeholder {
@@ -383,9 +383,9 @@ a {
   color: #332d2d;
 }
 #contacto button {
-  outline: none !important;
+  outline: 0 !important;
   border: none;
-  background: transparent;
+  background: 0 0;
 }
 #contacto button:hover {
   cursor: pointer;
@@ -444,7 +444,7 @@ a {
   width: 100%;
   position: absolute;
   background-color: transparent;
-  top: 0px;
+  top: 0;
   left: 0;
   font-size: 13px;
   color: #332d2d;
@@ -538,7 +538,7 @@ a {
   padding: 4px 25px 4px 10px;
   top: 50%;
   transform: translateY(-50%);
-  right: 0px;
+  right: 0;
   pointer-events: none;
   color: #c80000;
   font-size: 13px;
@@ -648,7 +648,7 @@ footer p {
   color: #ef3340;
   font-weight: 600;
   font-size: 1rem;
-  font-family: "Poppins";
+  font-family: Poppins;
   line-height: 1.5;
   letter-spacing: 1.25px;
   text-align: left;
@@ -682,7 +682,7 @@ footer p {
   .header__wrapper ul li a {
     font-weight: 600;
     font-size: 0.8rem;
-    font-family: "Poppins";
+    font-family: Poppins;
     line-height: 1.5;
     letter-spacing: 1.25px;
     text-align: left;
@@ -791,7 +791,7 @@ footer p {
   width: 100%;
   height: 100%;
   background: cover;
-  background-image: url("../img/background1.jpg");
+  background-image: url(../img/background1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -874,10 +874,10 @@ footer p {
       margin-left: -360px;
     }
     50% {
-      margin-left: 0px;
+      margin-left: 0;
     }
     70% {
-      margin-left: 0px;
+      margin-left: 0;
     }
     75% {
       margin-left: -360px;
@@ -900,10 +900,10 @@ footer p {
       margin-left: -360px;
     }
     50% {
-      margin-left: 0px;
+      margin-left: 0;
     }
     70% {
-      margin-left: 0px;
+      margin-left: 0;
     }
     75% {
       margin-left: -360px;
@@ -940,7 +940,7 @@ footer p {
   background-color: #ef3340;
   border: none;
   border-radius: 24px;
-  box-shadow: 1px 2px 8px 0px #707070;
+  box-shadow: 1px 2px 8px 0 #707070;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   color: #fff;
@@ -949,12 +949,12 @@ footer p {
   height: 48px;
   justify-content: space-between;
   min-width: 240px;
-  padding: 0px 16px;
+  padding: 0 16px;
   text-decoration: none;
   transition: all 0.2s linear;
   font-weight: 600;
   font-size: 1rem;
-  font-family: "Poppins";
+  font-family: Poppins;
   line-height: 1.5;
   letter-spacing: 1.25px;
   text-align: left;
@@ -981,12 +981,12 @@ footer p {
   height: 48px;
   justify-content: space-between;
   min-width: 240px;
-  padding: 0px 16px;
+  padding: 0 16px;
   text-decoration: none;
   transition: all 0.2s linear;
   font-weight: 600;
   font-size: 1rem;
-  font-family: "Poppins";
+  font-family: Poppins;
   line-height: 1.5;
   letter-spacing: 1.25px;
   text-align: left;
@@ -1009,12 +1009,12 @@ footer p {
   height: 48px;
   justify-content: space-between;
   min-width: 240px;
-  padding: 0px 16px;
+  padding: 0 16px;
   text-decoration: none;
   transition: all 0.2s linear;
   font-weight: 600;
   font-size: 1rem;
-  font-family: "Poppins";
+  font-family: Poppins;
   line-height: 1.5;
   letter-spacing: 1.25px;
   text-align: left;
@@ -1058,21 +1058,21 @@ footer p {
 }
 .card .title__h5 {
   font-size: 1.125rem;
-  margin: 16px 16px 0px 0px;
+  margin: 16px 16px 0 0;
   grid-column: 2/3;
   grid-row: 1/2;
 }
 .card .title__h6 {
-  margin: 0 16px 4px 0px;
+  margin: 0 16px 4px 0;
   grid-column: 2/3;
   grid-row: 2/3;
 }
 .card__copy {
   margin: 4px 16px 8px 16px;
-  font-family: "Merriweather", serif;
+  font-family: Merriweather, serif;
   font-size: 0.875rem;
   font-style: italic;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.36px;
   text-align: center;
@@ -1103,8 +1103,8 @@ footer p {
   opacity: 0.85;
 }
 .hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after {
+.hamburger.is-active .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner::before {
   background-color: #ef3340;
 }
 .hamburger-box {
@@ -1119,8 +1119,8 @@ footer p {
   margin-top: -2px;
 }
 .hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after {
+.hamburger-inner::after,
+.hamburger-inner::before {
   width: 40px;
   height: 4px;
   background-color: #ef3340;
@@ -1129,8 +1129,8 @@ footer p {
   transition-duration: 0.15s;
   transition-timing-function: ease;
 }
-.hamburger-inner::before,
-.hamburger-inner::after {
+.hamburger-inner::after,
+.hamburger-inner::before {
   content: "";
   display: block;
 }
