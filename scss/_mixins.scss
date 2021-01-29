@@ -71,9 +71,10 @@
   -moz-backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
+  background: hsla(0, 0%, 100%, 0.3);
   box-shadow: 4px 4px 12px 0 #0000000d;
   border: solid 1px #ffffff33;
-  background-image: linear-gradient(117deg, #ffffff29 -2%, #ffffff0d 103%);
+  position: relative;
 }
 @mixin colapsables($background-color, $color, $border, $font-size) {
   display: block;
