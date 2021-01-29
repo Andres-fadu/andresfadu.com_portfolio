@@ -1,11 +1,12 @@
 .header {
   min-height: 3em;
   padding: 0 $wrapper-space;
+  background: hsla(0, 0%, 100%, 0.6);
+  -moz-backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   box-shadow: 15px 15px 50px 0 #0000000d;
   border: solid 1px #f8f8f84d;
-  background-image: linear-gradient(99deg, #ffffff57 -2%, #f7f7f726 103%);
   z-index: 9;
   position: fixed;
   left: 0;
